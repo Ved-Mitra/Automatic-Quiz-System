@@ -149,9 +149,7 @@ void ICQuiz(int n)//DONE
         if(!found)
             q_no[i++]=random_number;
     }
-    for(int i=0;i<n;i++)
-        printf("%p\n",questions[i]);
-    /*for(int i=0;i<n;i++)//to store the questions into Quiz.txt
+    for(int i=0;i<n;i++)//to store the questions into Quiz.txt
     {
         char ch;
         fprintf(quiz,"Q%d. ",i+1);
@@ -161,7 +159,8 @@ void ICQuiz(int n)//DONE
             fprintf(quiz,"%c",ch);
         }
         fprintf(quiz,"\n\n\n",0);
-    }*/
+    }
+    /*
     int q=q_no[0];
     char ch=fgetc(questions[q]);
     fprintf(quiz,"Q%d. ",1);
@@ -170,7 +169,7 @@ void ICQuiz(int n)//DONE
     {
         fprintf(quiz,"%c",ch);
         ch=fgetc(questions[q]);
-    }
+    }*/
     for(int i=0;i<n;i++)//to store the answers into Answers.txt
     {
         char ch=fgetc(questions[q_no[i]]);
