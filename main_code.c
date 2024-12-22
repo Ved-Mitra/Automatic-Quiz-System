@@ -7,8 +7,6 @@
 #include<windows.h>
 #include<math.h>
 #include<unistd.h>
-#include"printer.c"
-#include"camera.c"
 
 void createQuiz();//to create a quiz from predefined set of questions
 void inputQuiz();//to create a quiz from the questions inputted by the instructor
